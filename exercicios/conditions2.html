@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Será que você pode votar?</title>
+	<link rel="stylesheet" href="">
+	<style type="text/css">
+		
+		body {
+			background: #d9d6fe;
+			font: normal 10pt Helvetica;
+			color: gray;
+		}
+
+		p {
+			font: italic 12pt Helvetica;
+		}
+
+		input {
+			background: white;
+			color: gray;
+
+		}
+
+		input#input1 {
+			width: 50px;
+		}
+
+
+	</style>
+</head>
+<body>
+	
+	<h1>Veja aqui se você já pode votar</h1>
+	<p>digite aqui sua idade:</p>
+	<input type="number" name="input1" id="input1">
+	<input type="button" name="btn" id="btn" value="enviar">
+	<p id="result"></p>
+
+	<script type="text/javascript">
+		
+		var botão = document.getElementById("btn")
+		botão.addEventListener("click", click)
+		document.addEventListener("click", click)
+
+
+		function click(){
+
+			var idade = document.getElementById("input1").value
+			var resultado = document.getElementById("result")
+
+			idade.value = ""
+
+			if (idade < 16) {
+
+				resultado.innerText = "Você não pode votar ainda"
+				
+			}else {
+				
+				if (idade < 18) {
+
+					resultado.innerText = "Você pode votar, se quiser"
+				}else if (idade < 65) {
+
+					resultado.innerText = "Você é obrigado a votar OTARIO!!"
+				}else {
+
+					resultado.innerText = "Vai caçar o que fazer VEIO"					
+				}
+			}
+			
+
+		}
+
+
+	</script>
+
+</body>
+</html>
