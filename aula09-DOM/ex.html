@@ -5,8 +5,78 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
 	<link rel="stylesheet" href="">
+	<style type="text/css">
+		body {
+			background-color: gray;
+			color: white;
+		}
+	</style>
 </head>
 <body>
-	
+	<h1>Iniciando estudos DOM</h1>
+	<p>Aqui vai o resultado</p>
+	<p>Aprendendo a usar o <strong>DOM</strong> em JS</p>
+	<div name="mensagem" id="msg">
+		Clique em mim
+	</div>
+
+		<!-- 
+		DOM
+
+		window
+			location
+			history 
+			document
+				html
+					head
+						meta
+						title
+					body
+						h1
+						p
+						p
+							strong
+						div
+		-->
+
+	<script type="text/javascript">
+
+		// SELEÇÃO
+
+			// tag
+				// getElementsByTagName()
+
+			// id
+				// getElementById()
+
+			// name
+				// getElementsByName()
+
+			// class
+				// getElementsByClass()
+
+			// selector
+				// getElementBySelector()
+
+		/*var corpo = document.body
+
+		corpo.style.fontFamily = 'sans-serif'
+		corpo.style.backgroundColor = 'black'
+		// 			background
+
+		var p1 = window.document.getElementsByTagName("p")[1]
+		p1.style.color = "blue"
+
+		document.write(p1.innerText)
+		document.write("<br>")
+		document.write(p1.innerHTML)
+
+		var msg = document.getElementById("msg").style.background = 'green'*/
+
+		var div = document.querySelector("div#msg").style.color = 'red'
+
+
+	</script>
+
 </body>
 </html>
