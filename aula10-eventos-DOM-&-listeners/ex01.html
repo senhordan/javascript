@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<style type="text/css">
+		div#area {
+			font: bold 2em Helvetica;
+			background: #000;
+			color: white;
+			width: 200px;
+			height: 200px;
+			line-height: 200px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<!-- FUNÇÕES NO HTML -->
+	<!-- adicionar como atributos -->
+	<!-- onclick="clicar()" onmouseenter="entrar()" onmouseleave="sair()" -->
+	<div id="area">
+		interaja...	
+	</div>
+	<script type="text/javascript">
+
+		// FUNÇÕES NO JS
+
+
+	 	area = document.querySelector("#area")
+
+	 	area.addEventListener("click", clicar)
+	 	area.addEventListener("mouseenter", entrar)
+	 	area.addEventListener("mouseleave", sair)
+
+		function clicar(){
+			area.innerText = "clicou"
+			area.style.background = "#a00"
+		}
+
+		function entrar(){
+			area.innerText = "entrou"
+			area.style.backgroundColor = "#0a0"
+		}
+		function sair(){
+			area.innerText = "saiu"
+			area.style.backgroundColor = "#00a"
+		}
+	
+
+
+		// EVENTOS DOM
+
+		// mouseenter
+		// mousemove
+		// mousedown
+		// mouseup
+		// click
+		// mouseout
+
+		// FUNÇÔES
+
+		// function ação(args) {
+		// 
+		// }
+		
+	</script>
+</body>
+</html>

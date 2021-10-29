@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<style type="text/css">
+		div#area {
+			font: bold 2em Helvetica;
+			background: #000;
+			color: white;
+			width: 200px;
+			height: 200px;
+			line-height: 200px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div onclick="action('clicou', '#a00')" onmouseenter="action('entrou', '#0a0')" onmouseleave="action('saiu', '#00a')" id="area">
+		interaja..		
+	</div>
+	<script type="text/javascript">
+		area = document.querySelector("#area")
+
+		function action(ação, cor){
+			area.innerText = ação
+			area.style.background = cor
+		}
+
+		// EVENTOS DOM
+
+		// mouseenter
+		// mousemove
+		// mousedown
+		// mouseup
+		// click
+		// mouseout
+
+		// FUNÇÔES
+
+		// function ação(args) {
+		// 
+		// }
+		
+	</script>
+</body>
+</html>
