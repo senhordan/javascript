@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<script src="./script.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+<body>
+	<h1>Tratamento de dados</h1>
+	<p></p>
+
+	<script type="text/javascript">
+		/*
+		var numero1 = Number(prompt("digite um numero"))
+		var numero2 = Number(prompt("digite outro numero"))
+		var soma = numero1 + numero2
+
+		alert(`A soma entre ${numero1} e ${numero2} é ${soma}`) 
+		*/
+
+
+
+		// "+" serve para adição e concatenação
+		// number + number == adição
+		// string + string == concatenação
+		// TEMPLATE STRING
+		// `Meu nome é ${nome} e tenho ${idade}`
+
+
+		//TRATAMENTO DE DADOS
+
+		// NUMERO
+		// Number.parseInt(numero)	transforma em numero inteiro
+		// Number.parseFloat(numero) transforma em numero inteiro
+		// Number(numero)
+
+		var numero = 525.5
+		numero.toFixed(2) 
+		// 525.50
+		// Adiciona duas casas depois do ponto
+
+		numero.toFixed(2).replace(".", ",")
+		// 525,50
+
+		numero.toLocaleString("pt-BR", {style: "currency", currency: "BRL"})
+		
+		numero.toLocaleString("pt-BR", {style: "currency", currency: "USD"})
+
+
+		// STRING
+		// String(variavel)
+		// variavel.toString()
+		// variavel.length
+		// variavel.toUpperCase()
+		// variavel.toLowerCase()
+
+		var nome = prompt("Qual seu nome?")
+		document.write(`Seu nome tem ${nome.length} letras <br>`)
+		document.write(`Seu nome maiusculo é ${nome.toUpperCase()} <br>`)
+		document.write(`Seu nome minusculo é ${nome.toLowerCase()} <br>`)
+
+
+
+
+	</script>
+</body>
+</html>
