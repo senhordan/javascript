@@ -6,13 +6,31 @@
 	<title></title>
 	<link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body onload="foco()">
 	<header>
-		<h1>Titulo</h1>
+		<h1>Verificador de Idade</h1>
 	</header>	
 	<section>
-		<div>testando..</div>
-		<div></div>
+		<div>
+			Ano de Nascimento:
+			<input type="number" id="nascimento" value="2000"> 
+		</div>
+		<div>
+			<label>Sexo:</label>
+			<input type="radio" id="masculino" name="sexo" value="Masculino" checked>			
+			<label>Masculino</label>
+			<input type="radio" id="feminino" name="sexo" value="Feminino" >
+			<label>Feminino</label>
+		</div>
+		<div>
+			<input type="button" id="verificar" name="verificar" value="Verificar" onclick="verificar()">
+		</div>
+		<div id="resultado">
+			Preencha os dados acima para ver o resultado
+		</div>
+		<div >
+			
+		</div>
 	</section>
 	<footer>
 		<p>&copy; Cursoemvideo</p>

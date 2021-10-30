@@ -24,3 +24,32 @@ section {
 footer {
 	font-style: italic;
 }
+
+div {
+	line-height: 2em;
+	text-align: left;
+}
+
+#nascimento {
+	width: 4em;
+	/*background: #4488ff50;*/
+	padding: 0.3em;
+	border-radius: 5px;
+	border-width: 1px;
+}
+
+#verificar {
+	/*background: #4488ff70;*/
+	padding: 0.3em;
+	/*border-width: 3px;*/
+	border-radius: 5px;
+	border-style: solid;
+}
+
+#verificar:hover {
+	background: #4488ff50;
+
+}
+
+
+

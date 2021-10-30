@@ -1,13 +1,9 @@
 body {
-			background: #47f;
+			/*background: #47f;*/
 			font: normal 1em Arial;
 			color: white;
 			text-align: center;
 		}
-
-header {
-
-}
 
 section {
 	background: #fff;
@@ -26,7 +22,7 @@ div img {
 }
 
 img	{
-	width: 50%;
+	width: 300px;
 }
 
 footer {
