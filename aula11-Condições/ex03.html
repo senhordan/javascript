@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<style type="text/css">
+		#velocidade {
+			width: 2em;
+		}
+
+		#enviar {
+			display: block;
+			margin: 5px;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Sistema de multas</h1>
+	<label>Velocidade do carro: <input type="text" name="velocidade" id="velocidade"> km/h</label>
+	<input type="button" name="enviar" id="enviar" value="enviar">
+	<label id="resultado"></label>
+	
+	<script type="text/javascript">
+		var enviar = document.querySelector("#enviar")
+		var resultado = document.querySelector("#resultado")
+		enviar.addEventListener("click", testar)
+
+		function testar() {
+			var velocidade = Number(document.querySelector("#velocidade").value)
+
+			if (velocidade > 60) {
+				resultado.innerHTML = "<p>Você ultrapassou o limite de velocidade, está <strong>MULTADO</strong>!!</p>"
+			} else {
+				resultado.innerHTML = "<p>Tudo OK, dirija com cuidado</p>"
+				
+			}
+		}
+	</script>
+
+</body>
+</html>

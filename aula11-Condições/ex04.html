@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<style type="text/css">
+		body {
+			background: #0af;
+			color: #fff;
+			text-align: center;
+			font-family: sans-serif;
+			font-weight: normal;
+		}
+
+		#pais {
+			margin: 0.3em;
+			border-radius: 5px;
+			padding: 3px;
+			width: 5em;
+			border-width: 0px;
+		}
+
+		#consultar {
+			font-weight: bolder;
+			color: #333;
+			padding: 3px;
+			border-radius: 5px;
+			border-width: 0px;
+			border-style: ;
+		}
+
+		#consultar:hover {
+			background: #6addff;
+			color: #fff;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Seu pais de origem</h1>
+	<form>
+		Digite aqui seu pais de Origem: 
+		<input type="text" name="pais" id="pais">
+		<input type="button" name="consultar" id="consultar" value="Consultar">
+
+	</form>
+	<label id="resultado"></label>
+
+	<script type="text/javascript">
+		var resultado = document.querySelector("#resultado")
+		var botao = document.querySelector("#consultar")
+		botao.addEventListener("click", consultar)
+
+		function consultar(){
+			var pais = document.querySelector("#pais").value
+			if (pais != "") {
+				
+				if (pais != "Brasil") {
+					resultado.innerHTML = "<p>Você é Estrangeiro no Brasil</p>"
+				} else {
+					resultado.innerHTML = "<p>Você é  Brasileiro</p>"
+
+				}
+			}
+		}
+
+	</script>
+</body>
+</html>
