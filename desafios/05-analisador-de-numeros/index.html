@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<header>
+		<h1>Analisador de Números</h1>
+	</header>
+	<section>
+		<div>
+			Número (entre 1 e 100):
+			<input type="number" id="numero" min="1" max="100">
+			<input type="button" onclick="adicionar()" id="adicionar" value="Adicionar">
+		</div>
+		<div>
+			<select size="10" id="select">
+			</select>
+		</div>
+			<div>
+				<input type="button" onclick="finalizar()" id="finalizar" value="Finalizar">
+			</div>
+			<div id="resultado">
+				
+			</div>
+	</section>
+	<footer>
+		<p>&copy; Cursoemvideo</p>
+	</footer>
+	<script src="./script.js"></script>
+</body>
+</html>
