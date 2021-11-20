@@ -16,7 +16,6 @@ function adicionar() {
 			let option = document.createElement("option")
 			option.text = `Valor ${valor} adicionado.`
 			select.appendChild(option)
-
 			lista.push(valor)
 			numero.value = ""
 

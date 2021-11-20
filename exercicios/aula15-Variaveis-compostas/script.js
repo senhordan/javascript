@@ -43,7 +43,20 @@ console.log(lista.slice(-1))
 	console.log(lista[posição])
 }*/
 
+let atributos_nomes = ["força", "destreza", "constituição", "inteligência", "sabedoria", "carisma"]
 
+let atributos_elementos = {
+	"força": 1,
+	"destreza": 2,
+	"constituição": 3,
+	"inteligência": 4,
+	"sabedoria": 5,
+	"carisma": 6
+}
+
+for (let atributo in atributos_elementos) {
+	console.log(atributo+": "+atributos_elementos[atributo])
+}
 
 
 
