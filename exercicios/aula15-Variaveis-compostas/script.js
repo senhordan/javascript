@@ -19,6 +19,8 @@ lista[3] = 6
 
 lista.push(1)
 lista.push(10)
+
+string = lista.join(' ')
 // cria um novo ÍNDICE e adiciona o VALOR 7
 // [5, 8, 4, 6, 7]
 lista.length
